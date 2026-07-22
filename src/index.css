@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;600&family=Marck+Script&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-manrope: "Manrope", sans-serif;
-  --font-italiana: "Italiana", serif;
-  --font-marck: "Marck Script", cursive;
+  /* 1100px; keep rem units so Tailwind can sort breakpoints correctly */
+  --breakpoint-xl: 68.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background: #0a0608;
+  font-family: 'Imprima', sans-serif;
+}
+
+@keyframes bobUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
